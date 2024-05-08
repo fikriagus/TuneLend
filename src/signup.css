@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.login {
+  height: 100vh;
+}
+
+.login-right {
+  justify-content: center;
+}
+
+.header h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.header p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login-form label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.login-form input {
+  border-radius: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.login-form a {
+  color: black;
+  font-weight: 400;
+  margin: 15px 0;
+  display: block;
+}
+
+.login-form .signin {
+  background: #165668;
+  border-radius: 10px;
+  width: 100%;
+  height: 42px;
+  margin-top: 15px;
+  border: none;
+}
+
+.login-form span,
+.login-form span a {
+  font-weight: 600;
+}
+
+/* left */
+
+.login-left {
+  background: #165668;
+  padding: 20px;
+}
+
+.logo-tunelend {
+  width: fit-content;
+}
+
+.logo-tunelend img {
+  width: 150px;
+}
+
+.gambar {
+  width: fit-content;
+}
+
+.gambar img {
+  width: 400px;
+  height: auto;
+  margin: 50px 0;
+}
