@@ -1,8 +1,8 @@
-import "./login.css";
-import LOGO from "./assets/img/tuneland-logo.png";
-import GAMBAR from "./assets/img/gitaris.png";
+import "./signup.css";
+import LOGO from "../assets/img/tuneland-logo.png";
+import GAMBAR from "../assets/img/gitaris.png";
 
-const Login = () => {
+export const Signup = () => {
   return (
     <section className="login d-flex">
       <div className="login-left w-50 h-100">
@@ -25,7 +25,7 @@ const Login = () => {
           <div className="col-7">
             <div className="header">
               <h1>Selamat datang,</h1>
-              <p>Silahkan masuk menggunakan email dan password anda</p>
+              <p>Silahkan daftar menggunakan email dan password anda</p>
             </div>
 
             <div className="login-form">
@@ -48,15 +48,26 @@ const Login = () => {
                 id="password"
                 placeholder="masukkan password"
               />
+              <label htmlFor="konfirmasi" className="form-label">
+                Konfirmasi Password
+              </label>
+              <input
+                type="password"
+                className="form-control"
+                id="konfirmasi"
+                placeholder="masukkan password"
+              />
               <button className="signin text-light">Masuk</button>
-              <a href="#" className="text-decoration-none text-center">
-                Lupa kata sandi?
-              </a>
+              <p className="text-center">
+                Dengan mendaftar, Anda menyetujui{" "}
+                <span>Persyaratan Layanan</span> dan{" "}
+                <span>Kebijakan Privasi </span> kami.
+              </p>
               <div className="text-center">
                 <span className=" d-inline ">
-                  Belum punya akun?{" "}
-                  <a href="#" className="signup d-inline">
-                    Daftar
+                  Sudah punya akun?{" "}
+                  <a href="/login" className="signup d-inline">
+                    masuk
                   </a>
                 </span>
               </div>
@@ -67,5 +78,3 @@ const Login = () => {
     </section>
   );
 };
-
-export default Login;
