@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { Signup } from "./pages/Signup-page";
 import { Pemilik } from "./pages/Pemilik";
 import { Pemilik2 } from "./pages/Pemilik2";
+import { FAQ } from "./pages/Pertanyaaan-umum";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           {/* <Route path="/" element={<Login />}></Route> */}
-          <Route path="/" element={<Pemilik />}></Route>
+          <Route path="/" element={<FAQ />}></Route>
           <Route path="/pemilik2" element={<Pemilik2 />}></Route>
           <Route path="/pemilik" element={<Pemilik />}></Route>
           {/* <Route path="/login" element={<Login />}></Route> */}

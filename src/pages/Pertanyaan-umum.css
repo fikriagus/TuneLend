@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --warna-putih: #ffffff;
+  --warna-navbar: #165668;
+  --warna-nabarr: #457886;
+  --warna-opac: #4578865f;
+  --judul: 500%;
+  --biasa: 190%;
+  --biasa-banget: 120%;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(22, 86, 104, 0.9);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon {
+  width: fit-content;
+}
+
+.icon img {
+  width: 30px;
+}
+
+.text-navbar {
+  color: var(--warna-putih);
+  margin: 0 5px;
+}
+
+.font-putih {
+  color: var(--warna-putih);
+}
+
+/* main */
+.main-container {
+  margin-left: 35px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.faq {
+  max-width: 650px;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.faq input {
+  display: none;
+}
+
+.faq label {
+  position: relative;
+  font-weight: 500;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.faq label::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  background: url("../assets/img/arrow.svg") no-repeat 0 0;
+}
+
+.faq input:checked + label::after {
+  transform: rotate(90deg);
+}
+
+.faq-text {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 8px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.faq input:checked ~ .faq-text {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  top: 0;
+}
+
+.img-faq {
+  width: fit-content;
+  margin-left: 100px;
+}
+
+.img-faq img {
+  width: 400px;
+}
+/*  */
+
+#project {
+  background-color: var(--warna-navbar);
+}
+
+#footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  background: var(--warna-navbar);
+  top: 100%;
+}
+
+.gambar-kecil {
+  width: 4rem;
+}
+
+.gambar-kecilinfinit {
+  width: 8rem;
+}
+
+.ratatengah {
+  text-align: center;
+}
